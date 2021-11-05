@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marry Place </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <style async>
+        @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+        </style>
+    <script src="https://kit.fontawesome.com/417d3d55bd.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="info">
+                <button class="login" id="sup">Signe Up</button>
+                 <button class="login" id="lin">Log In</button>
+                 <div style="display: inline-flex;"><p id="logId">???</p>
+                    <button type="button" id="logout">Signe Out</button>
+                </div>
+             </div> 
+            
+            <!-- -----------menu bar---------- -->
+            <a href="index.html" id="logo"><img id="birds" src="images/logo.png" style="width: 130px; height: 85px">Marry Place</a>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul id="nav">
+                <li><a href="venues.html">Venues</a></li>
+                <li><a href="caters.html">Caters</a></li>
+                <li><a href="eventplanner.htm">Event Planners</a></li>
+                <li><a href="photo.htm">Photographers</a></li>
+                <li><a href="rental.html">Rentals & Decore</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="pagetitle">Rentals & Decore</h1>
+             <img class="banner" src="images/rentalsBanner.jpg" width="100%" height="350px">
+        
+             <div id="bulletin">
+                <div id="btnBan"><button id="btnTip1">Tips</button> <button id="btnTip2">Cuppons</button></div>
+                <div id="tips1">
+                    <a  href="https://www.weddingwire.ca/wedding-ideas/how-to-choose-your-wedding-flowers--c137" target="_blank"><img src="rentals/rtip1.jpg"><br>How to Choose Your Wedding Flowers</a><br><br>
+                    <a  href="https://www.womangettingmarried.com/5-things-consider-choosing-wedding-band/" target="_blank"><img src="rentals/rtip2jpg.jpg"><br>5 Things You Should Definitely Consider When Choosing Your Wedding Band</a><br><br>
+                    <a  href="https://junebugweddings.com/wedding-blog/9-tips-for-decorating-your-wedding-reception-on-a-budget/" target="_blank"><img src="rentals/rtip3.jpg"><br>9 Tips for Decorating Your Wedding Reception on a Budget</a><br><br> 
+                    <a  href="https://www.weddingventure.com/guide/article/five-reasons-for-hiring-a-wedding-singer" target="_blank"><img src="rentals/rtip4.jpg"><br>Five Reasons For Hiring A Wedding Singer</a><br><br>
+                </div>
+                <div id="tips2">
+                    <div class="cuppon">
+                        <img src="tips/tip1.jpg">
+                        <div class="cpcontent">
+                            <h2 style="font-size: .9em;">30% Off On Bride Gounds</h2>
+                            <h1 style="font-size: .8em;">The Beuty Lense</h1>
+                            <div class="container">
+                                <p style="font-size: .7em;">Use Promo Code: <span class="promo">BRIDEG30</span></p>
+                                <p class="expire" style="font-size: .8em;">Expires: Jan 03, 2022</p>
+                              </div>
+
+                        </div>
+                    </div>
+                    <div class="cuppon">
+                        <img src="tips/tip2.jpg">
+                        <div class="cpcontent">
+                            <h2 style="font-size: .9em;">10% Off Cosher Orders</h2>
+                            <h1 style="font-size: .8em;">Cater to Service</h1>
+                            <div class="container">
+                                <p style="font-size: .7em;">Use Promo Code: <span class="promo">COSHER10</span></p>
+                                <p class="expire" style="font-size: .8em;">Expires: Jan 03, 2022</p>
+                              </div>
+
+                        </div>
+                    </div>
+                    <div class="cuppon">
+                        <img src="tips/tip3.jpg">
+                        <div class="cpcontent">
+                            <h2 style="font-size: .9em;">15% Off Ceremony Venue Rental</h2>
+                            <h1 style="font-size: .8em;">Casa Bonita</h1>
+                            <div class="container">
+                                <p style="font-size: .7em;">Use Promo Code: <span class="promo">CASABONITA15</span></p>
+                                <p class="expire" style="font-size: .8em;">Expires: Jan 03, 2022</p>
+                              </div>
+
+                        </div>
+                    </div>
+                    <div class="cuppon">
+                        <img src="tips/tip4.jpg">
+                        <div class="cpcontent">
+                            <h2 style="font-size: .9em;">20% Off On Wedding Photograpy</h2>
+                            <h1 style="font-size: .8em;">The Beuty Lense</h1>
+                            <div class="container">
+                                <p style="font-size: .7em;">Use Promo Code: <span class="promo">TBL232</span></p>
+                                <p class="expire" style="font-size: .8em;">Expires: Jan 03, 2022</p>
+                              </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="boxM">
+                                     <!------------------Rentals--------------------------->
+                    <h2>Rentals</h2>
+                    <div class="slider-outer2">
+                      <i class="fas fa-angle-left"  alt="prev" id="prev" ng-click="prevew" style="margin:7px;"></i>
+                        <div class="slider-inner2">
+
+                                <div class="rntD active" >
+                                    <img src="rentals/rental1.jpg" alt="Anne" style="width:100%; display: block;">
+                                    <h1>Plet</h1>
+                                    <p class="title">Out Door Wedding Tents</p>
+                                    <p>Mauris ligula lectus, rhoncus et laoreet vel, aliquam nec leo. Sed rutrum ligula et ornare bibendum.</p>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                                    <p><button class="ebtn2">Contact</button></p>
+                                  </div>
+
+                                <div class="rntD active" >
+                                    <img src="rentals/rental2.jpg" alt="Anne" style="width:100%; display: block;">
+                                    <h1>July's </h1>
+                                    <p class="title">Chairs and Tables Rentals</p>
+                                    <p>Mauris ligula lectus, rhoncus et laoreet vel, aliquam nec leo. Sed rutrum ligula et ornare bibendum.</p>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span><span class="fa fa-star"></span>
+                                    <p><button class="ebtn2">Contact</button></p>
+                                  </div>
+                           
+                                <div class="rntD" >
+                                    <img src="rentals/rental3jpg.jpg" alt="Anne" style="width:100%; display: block;">
+                                    <h1>Mt&S </h1>
+                                    <p class="title">Wedding Forniture Rentals</p>
+                                    <p>Mauris ligula lectus, rhoncus et laoreet vel, aliquam nec leo. Sed rutrum ligula et ornare bibendum.</p>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star"></span>
+                                    <p><button class="ebtn2">Contact</button></p>
+                                  </div>
+                           
+                                <div class="rntD">
+                                    <img src="rentals/rental4.jpg" alt="Anne" style="width:100%; display: block;">
+                                    <h1>Iluminate</h1>
+                                    <p class="title"> Lights and Music Equipment Rentals</p>
+                                    <p>Mauris ligula lectus, rhoncus et laoreet vel. Sed rutrum ligula et ornare bibendum.</p>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span><span class="fa fa-star"></span>
+                                    <p><button class="ebtn2">Contact</button></p>
+                                  </div>
+                        </div>
+                        <i class="fas fa-angle-right" alt="next" id="next" ng-click="next" style="margin:7px;"></i>
+                    </div>
+            
+                <br><hr><br><br> <!--  ------------------------------Decore-------------------- -->
+                <div>
+                    <h2>Decore</h2>
+                    <div class="slider-oute3">
+                      <i class="fas fa-angle-left"  alt="prev" id="prev1" style="margin:7px;"></i>
+                        <div class="slider-inner3">
+                        
+                                <div class="rntD1 show" >
+                                    <img src="rentals/decor1.jpg" alt="Anne" style="width:100%; display: block;">
+                                    <h1>Start to End</h1>
+                                    <p class="title">Full Wedding decore</p>
+                                    <p>Mauris ligula lectus, rhoncus et laoreet vel, aliquam nec leo. Sed rutrum  et ornare bibendum.</p>
+                                   <br>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star"></span>
+                                    <p><button class="ebtn2">Contact</button></p>
+                                  </div>
+                            
+                                <div class="rntD1 show">
+                                    <img src="rentals/decor2.jpg" alt="Anne" style="width:100%; display: block;">
+                                    <h1>Violets</h1>
+                                    <p class="title">Floral Wedding Decore</p>
+                                    <p>Mauris ligula lectus, rhoncus et laoreet vel, aliquam nec leo. Sed rutrum ligula et ornare bibendum.</p>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star cheked"></span><span class="fa fa-star"></span>
+                                    <p><button class="ebtn2">Contact</button></p>
+                                  </div>
+                           
+                                <div class="rntD1">
+                                    <img src="rentals/decor3.jpg" alt="Anne" style="width:100%; display: block;">
+                                    <h1>Elite Decore</h1>
+                                    <p class="title">Wedding Reception Decore</p>
+                                    <p>Mauris ligula lectus, rhoncus et laoreet vel, aliquam nec leo. Sed rutrum ligula et ornare bibendum.</p>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                                    <p><button class="ebtn2">Contact</button></p>
+                                  </div>
+                           
+                                <div class="rntD1">
+                                    <img src="rentals/decor4.jpg" alt="Anne" style="width:100%; display: block;">
+                                    <h1>Say I Do</h1>
+                                    <p class="title">Wedding Ceremony Decore</p>
+                                    <p>Mauris ligula lectus, rhoncus et laoreet vel, aliquam nec leo. Sed rutrum ligula et ornare bibendum.</p>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star"></span>
+                                    <p><button class="ebtn2">Contact</button></p>
+                                  </div>
+                                
+                        </div>
+                        <i class="fas fa-angle-right" alt="next" id="next1" style="margin:7px;"></i>
+                    </div>
+                </div>
+                <br><hr><br><br><!-- --------------------------artist-------------------------------------->
+                <div>
+                    <h2>Artist</h2>
+                    <div class="slider-out4">
+                      <i class="fas fa-angle-left"  alt="prev" id="preBtn" style="margin:7px;"></i>
+                        <div class="slider-inner4">
+
+                                <div class="slider act" >
+                                    <img src="rentals/artist1.jpg" alt="Anne" style="width:100%; display: block;">
+                                    <h1>Voices</h1>
+                                    <p class="title">Contemporary Music Group</p>
+                                    <p>Mauris ligula lectus, rhoncus et laoreet vel, aliquam nec leo. Sed rutrum ligula et ornare bibendum.</p>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star"></span>
+                                    <p><button class="ebtn2">Contact</button></p>
+                                  </div>
+
+                                <div class="slider act">
+                                    <img src="rentals/artist2.jpg" alt="Anne" style="width:100%; display: block;">
+                                    <h1>Sillabus</h1>
+                                    <p class="title">Contemporary Music Group</p>
+                                    <p>Mauris ligula lectus, rhoncus et laoreet vel, aliquam nec leo. Sed rutrum ligula et ornare bibendum.</p>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star cheked"></span><span class="fa fa-star"></span>
+                                    <p><button class="ebtn2">Contact</button></p>
+                                  </div>
+                           
+                                <div class="slider">
+                                    <img src="rentals/artist3.jpg" alt="Anne" style="width:100%; display: block;">
+                                    <h1>Mark Stuart</h1>
+                                    <p class="title">Vocalist</p>
+                                    <p>Mauris ligula lectus, rhoncus et laoreet vel, aliquam nec leo. Sed ligula et ornare bibendum.</p>
+                                    <br>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                                    <p><button class="ebtn2">Contact</button></p>
+                                  </div>
+                           
+                                <div class="slider">
+                                    <img src="rentals/artist4.jpg" alt="Anne" style="width:100%; display: block;">
+                                    <h1>Natasha Jhones</h1>
+                                    <p class="title">Vocalist</p>
+                                    <p>Mauris ligula lectus, rhoncus et laoreet vel, aliquam nec leo. Sed rutrum ligula et ornare.</p>
+                                   <br>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star"></span>
+                                    <p><button class="ebtn2">Contact</button></p>
+                                  </div>
+
+                                  <div class="slider">
+                                    <img src="rentals/artist5.jpg" alt="Anne" style="width:100%; display: block;">
+                                    <h1>Dakota</h1>
+                                    <p class="title">Contemporary Dj</p>
+                                    <p>Mauris ligula lectus, rhoncus et laoreet vel, aliquam nec leo. Sed rutrum ligula et ornare bibendum.</p>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star"></span>
+                                    <p><button class="ebtn2">Contact</button></p>
+                                  </div>
+
+                                  <div class="slider">
+                                    <img src="rentals/artist6.jpg" alt="Anne" style="width:100%; display: block;">
+                                    <h1>NatD</h1>
+                                    <p class="title">Electro Music Dj</p>
+                                    <p>Mauris ligula lectus, rhoncus et laoreet vel, aliquam nec leo. Sed rutrum ligula et ornare bibendum.</p>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span><span class="fa fa-star"></span>
+                                    <p><button class="ebtn2">Contact</button></p>
+                                  </div>
+                        </div>
+                        <i class="fas fa-angle-right" alt="next" id="follow" style="margin:7px;"></i>
+                    </div>
+                </div>
+
+                <div id="angular" ng-app="appform" ng-controller="appFormCtrl"> 
+                    <div class="bg-modal2">
+                        <div class="modal-content2" id="subForm">
+                            <img id="birds" src="images/logo.png" style="width:78px" height="68px"><br>
+                            <p style="font-size: 2em; font-family: 'Italianno', cursive; color:rgb(211, 64, 6);">Marry Place</p>
+                            <form  method = "post" action="" id="myForm">
+                                <p>Contact Us</p>
+                                <p><input id="inText" type="text" placeholder="Enter Full Name" name="name" ng-model="fName" required></p>
+                               <p><input type="text" placeholder="Enter Email" name="email" required></p>
+                               <p><input type="tel"  placeholder="Enter Phone NUmber" name="phone"></p>
+                               <p><textarea name="" id="msg" placeholder="Your message"></textarea></p>
+                               <div>
+                                <button type="button" class="cancelbtn" style="width: 20%;">Cancel</button>
+                                <button type="submit" class="submit" style="width: 20%;">Submit</button>
+                               </div>
+                             </form>
+                             <h2>Or Call us At: <a href="tel:555-555-555" style="text-decoration: none;">555-555-555</a></h2>
+                        </div>
+                    
+                        <div class="modal-content2" id="subForm2" style="width: 600px;">
+                            <h2>Thank you {{fName}} for contacting us!</h2>
+                            <p>One of our representatives will be in touch with you soon.</p>
+                            <button type="button" class="cancelbtn" style="width: 20%;">Finish</button>
+                        </div>
+                    </div>
+                </div>    
+
+
+            </div>
+    </main>
+    <footer>
+        <div id="box">
+        <div id="phone" style="width: 60%;">
+            <p>Contact Us: <a href="tel:555-555-555" style="text-decoration: none;">555-555-555</a></i></p> 
+        </div>
+        <div id="social" style="width: 30%;">
+            <p>Find Us On: <a id="face" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> 
+                <a id="insta" href="https://www.instagram.com/" target="_blank"> <i class="fab fa-instagram"></i></a> 
+                 <a id="twit" href="https://twitter.com/" target="_blank"> <i class="fab fa-twitter"></i> </a></p>
+        </div>
+    </div>
+        <div id="cright" style="width: 100%;">
+            <p>&copy; Marry Place | Jquary project By: Michelle Tejeda</p>
+        </div>
+    </footer>
+
+    <div class="bg-modal" id="Su">
+        <div class="modal-content">
+           <img id="birds" src="images/logo.png" style="width:78px" height="68px"><br>
+           <p style="font-size: 2em; font-family: 'Italianno', cursive; color:rgb(211, 64, 6);">Marry Place</p>
+
+           <form  method = "post" action="">
+            <p>Sign Up</p>
+            <input type="text" placeholder="Enter User Name" name="name" required>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <label id="ckbox">
+            <input  type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <div class="clearfix">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+           </form>
+        </div>
+    </div>
+
+    <div class="bg-modal" id="Li">
+        <div class="modal-content">
+            <img id="birds" src="images/logo.png" style="width:78px" height="68px"><br>
+            <p style="font-size: 2em; font-family: 'Italianno', cursive; color:rgb(211, 64, 6);">Marry Place</p>
+            <form  method = "post" action="" id="myForm">
+                <p>Log In</p>
+                <input id="inText" type="text" placeholder="Enter User Name" name="name" required>
+               <input type="password" placeholder="Enter Password" name="psw" required style="width: 50%;" >
+               <div>
+                <button type="button" class="cancelbtn" style="width: 20%;">Cancel</button>
+                <button type="submit" class="signinbtn" style="width: 20%;">Sign In</button>
+               </div>
+               
+             </form>
+        </div>
+    </div>
+    
+</body>
+</html>

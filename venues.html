@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marry Place </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap'); </style>
+    <script src="https://kit.fontawesome.com/417d3d55bd.js" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="info">
+                <button class="login" id="sup">Signe Up</button>
+                 <button class="login" id="lin">Log In</button>
+                 <div style="display: inline-flex;"><p id="logId">???</p>
+                    <button type="button" id="logout">Signe Out</button>
+                </div>
+             </div> 
+            <!-- -----------menu bar---------- -->
+            <a href="index.html" id="logo"><img id="birds" src="images/logo.png" style="width: 130px; height: 85px">Marry Place</a>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul id="nav">
+                <li><a href="venues.html">Venues</a></li>
+                <li><a href="caters.html">Caters</a></li>
+                <li><a href="eventplanner.htm">Event Planners</a></li>
+                <li><a href="photo.htm">Photographers</a></li>
+                <li><a href="rental.html">Rentals & Decor</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+     
+        <!---------------Page header--------------------------->
+        <h1 class="pagetitle"  style="left: 38%;">Venues</h1>
+             <img class="banner" src="images/venuesBanner.jpg" width="100%" height="350px">
+        
+             <!----------------tips and cuppons ---------------->
+         <div id="bulletin">
+            <div id="btnBan"><button id="btnTip1">Tips</button> <button id="btnTip2">Cuppons</button></div>
+            <div id="tips1">
+                <a  href="https://www.beaches.com/blog/beach-wedding/" target="_blank"><img src="venues/vtip1.jpg"><br>30+ Things To Consider When Planning a Beach Wedding</a><br><br>
+                <a  href="https://www.marthastewart.com/7962138/unique-wedding-table-settings" target="_blank"><img src="venues/vtip2.jpg"><br>18 Creative Ways to Set Your Reception Tables</a><br><br>
+                <a  href="https://www.brides.com/story/wedding-reception-seating-chart-etiquette" target="_blank"><img src="venues/vtip3.jpg"><br>12 Tips for Designing the Ultimate Wedding Reception Seating Chart</a><br><br>
+                <a  href="https://www.brides.com/story/how-to-choose-the-perfect-wedding-venue" target="_blank"><img src="venues/vtip4.jpg"><br>Here's How to Choose the Perfect Wedding Venue</a><br><br>
+            </div>
+            <div id="tips2">
+                <div class="cuppon">
+                    <img src="tips/tip1.jpg">
+                    <div class="cpcontent">
+                        <h2 style="font-size: .9em;">30% Off On Bride Gounds</h2>
+                        <h1 style="font-size: .8em;">The Beuty Lense</h1>
+                        <div class="container">
+                            <p style="font-size: .7em;">Use Promo Code: <span class="promo">BRIDEG30</span></p>
+                            <p class="expire" style="font-size: .8em;">Expires: Jan 03, 2022</p>
+                          </div>
+
+                    </div>
+                </div>
+                <div class="cuppon">
+                    <img src="tips/tip2.jpg">
+                    <div class="cpcontent">
+                        <h2 style="font-size: .9em;">10% Off Cosher Orders</h2>
+                        <h1 style="font-size: .8em;">Cater to Service</h1>
+                        <div class="container">
+                            <p style="font-size: .7em;">Use Promo Code: <span class="promo">COSHER10</span></p>
+                            <p class="expire" style="font-size: .8em;">Expires: Jan 03, 2022</p>
+                          </div>
+
+                    </div>
+                </div>
+                <div class="cuppon">
+                    <img src="tips/tip3.jpg">
+                    <div class="cpcontent">
+                        <h2 style="font-size: .9em;">15% Off Ceremony Venue Rental</h2>
+                        <h1 style="font-size: .8em;">Casa Bonita</h1>
+                        <div class="container">
+                            <p style="font-size: .7em;">Use Promo Code: <span class="promo">CASABONITA15</span></p>
+                            <p class="expire" style="font-size: .8em;">Expires: Jan 03, 2022</p>
+                          </div>
+                    </div>
+                </div>
+                <div class="cuppon">
+                    <img src="tips/tip4.jpg">
+                    <div class="cpcontent">
+                        <h2 style="font-size: .9em;">20% Off On Wedding Photograpy</h2>
+                        <h1 style="font-size: .8em;">The Beuty Lense</h1>
+                        <div class="container">
+                            <p style="font-size: .7em;">Use Promo Code: <span class="promo">TBL232</span></p>
+                            <p class="expire" style="font-size: .8em;">Expires: Jan 03, 2022</p>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----------------Page body ------------------------------>
+            <div class="boxM">
+                <div ng-app="searchApp" ng-controller="searchController">
+
+                    <div class="searchB" id="searchBar2" >
+                        <h2>Search by Venues Name: <input id="searchbar" onkeyup="search_venue()" type="text" 
+                            name="search" placeholder="Search Cater"></h2>
+                    </div>
+                    <ol id="list"> 
+                    <li class="venue">
+                        <img src="venues/vimg1.jpg" >
+                        <h2>Casa Bonita</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id neque ac augue facilisis ornare. Phasellus ultricies auctor vestibulum. Donec laoreet condimentum lacus, vitae fringilla lacus feugiat eget.</p>
+                        <h3>Price Range: {{price1 | currency}} - {{price3 | currency}}</h3>
+                        <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span><span class="fa fa-star"></span>
+                        <button class="btv">Contact</button>
+                    </li>
+
+                    <li class="venue">
+                        <img src="venues/vimg2.jpg">
+                        <h2>Bellwood Venues</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id neque ac augue facilisis ornare. Phasellus ultricies auctor vestibulum. Donec laoreet condimentum lacus, vitae fringilla lacus feugiat eget.</p>
+                        <h3>Price Range: {{price2 | currency}} - {{price3 | currency}}</h3>
+                        <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                        <button class="btv">Contact</button>
+                    </li>
+
+                    <li class="venue">
+                        <img src="venues/vimg3.jpg" style="margin-right: 30px;">
+                        <h2>Berkely Wedding Venue</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id neque ac augue facilisis. Phasellus auctor vestibulum. Donec laoreet condimentum lacus, vitae fringilla lacus feugiat eget.</p>
+                        <h3>Price Range: {{price1 | currency}} - {{price3 | currency}}</h3>
+                        <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span><span class="fa fa-star"></span>
+                        <button class="btv">Contact</button>
+                    </li>
+
+                    <li class="venue">
+                        <img src="venues/vimg4.jpg" style="margin-right: 30px;">
+                        <h2>The River Venues</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id neque ac augue facilisis ornare. Phasellus ultricies auctor vestibulum. Donec laoreet condimentum lacus, vitae fringilla lacus feugiat eget.</p>
+                        <h3>Price Range: {{price1 | currency}} - {{price2 | currency}}</h3>
+                        <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span><span class="fa fa-star"></span>
+                        <button class="btv">Contact</button>
+                    </li>
+                    </ol>
+               </div>
+
+               <div id="angular" ng-app="appform" ng-controller="appFormCtrl"> 
+                <div class="bg-modal2">
+                    <div class="modal-content2" id="subForm">
+                        <img id="birds" src="images/logo.png" style="width:78px" height="68px"><br>
+                        <p style="font-size: 2em; font-family: 'Italianno', cursive; color:rgb(211, 64, 6);">Marry Place</p>
+                        <form  method = "post" action="" id="myForm">
+                            <p>Contact Us</p>
+                            <p><input id="inText" type="text" placeholder="Enter Full Name" name="name" ng-model="fName" required></p>
+                           <p><input type="text" placeholder="Enter Email" name="email" required></p>
+                           <p><input type="tel"  placeholder="Enter Phone NUmber" name="phone"></p>
+                           <p><textarea name="" id="msg" placeholder="Your message"></textarea></p>
+                           <div>
+                            <button type="button" class="cancelbtn" style="width: 20%;">Cancel</button>
+                            <button type="submit" class="submit" style="width: 20%;">Submit</button>
+                           </div>
+                         </form>
+                         <h2>Or Call us At: <a href="tel:555-555-555" style="text-decoration: none;">555-555-555</a></h2>
+                    </div>
+                
+                    <div class="modal-content2" id="subForm2" style="width: 600px;">
+                        <h2>Thank you {{fName}} for contacting us!</h2>
+                        <p>One of our representatives will be in touch with you soon.</p>
+                        <button type="button" class="cancelbtn" style="width: 20%;">Finish</button>
+                    </div>
+                </div>
+            </div>   
+
+            </div>
+    </main>
+    <footer>
+        <div id="box">
+        <div id="phone" style="width: 60%;">
+            <p>Contact Us: <a href="tel:555-555-555" style="text-decoration: none;">555-555-555</a></i></p> 
+        </div>
+        <div id="social" style="width: 30%;">
+            <p>Find Us On: <a id="face" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> 
+                <a id="insta" href="https://www.instagram.com/" target="_blank"> <i class="fab fa-instagram"></i></a> 
+                 <a id="twit" href="https://twitter.com/" target="_blank"> <i class="fab fa-twitter"></i> </a></p>
+        </div>
+    </div>
+        <div id="cright" style="width: 100%;">
+            <p>&copy; Marry Place | Jquary project By: Michelle Tejeda</p>
+        </div>
+    </footer>
+
+    <div class="bg-modal" id="Su">
+        <div class="modal-content">
+           <img id="birds" src="images/logo.png" style="width:78px" height="68px"><br>
+           <p style="font-size: 2em; font-family: 'Italianno', cursive; color:rgb(211, 64, 6);">Marry Place</p>
+
+           <form  method = "post" action="">
+            <p>Sign Up</p>
+            <input type="text" placeholder="Enter User Name" name="name" required>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <label id="ckbox">
+            <input  type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <div class="clearfix">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+           </form>
+        </div>
+    </div>
+
+    <div class="bg-modal" id="Li">
+        <div class="modal-content">
+            <img id="birds" src="images/logo.png" style="width:78px" height="68px"><br>
+            <p style="font-size: 2em; font-family: 'Italianno', cursive; color:rgb(211, 64, 6);">Marry Place</p>
+            <form  method = "post" action="" id="myForm">
+                <p>Log In</p>
+                <input id="inText" type="text" placeholder="Enter User Name" name="name" required>
+               <input type="password" placeholder="Enter Password" name="psw" required style="width: 50%;" >
+               <div>
+                <button type="button" class="cancelbtn" style="width: 20%;">Cancel</button>
+                <button type="submit" class="signinbtn" style="width: 20%;">Sign In</button>
+               </div>
+               
+             </form>
+        </div>
+    </div>
+    
+</body>
+</html>

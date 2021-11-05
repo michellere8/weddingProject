@@ -1,0 +1,1257 @@
+
+*{
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: auto;
+}
+
+
+
+#info{
+   display: inline-block;
+   margin-left: 80%;
+} 
+
+button{
+    background-color: rgba(233, 248, 14, 0.39);
+    color: rgb(10, 5, 3);
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
+.login{
+    margin: 15px 10px 0px 20px;
+}
+
+header nav{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position:relative;
+    background-color: rgb(237, 241, 160);
+}
+
+nav ul{
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 1em;
+}
+
+nav li a{
+    text-decoration: none;
+    font-size: 1.6em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(218, 69, 15);
+    padding: 7px;
+    font-weight: 600;
+    text-shadow: 5px 4px 9px rgb(153, 151, 151);
+}
+
+nav #logo{
+    margin-right: 7px;
+    text-decoration: none;
+    font-size: 3em;
+    color: rgb(211, 64, 6);
+    font-family: 'Italianno', cursive;
+    font-weight: 600;
+}
+
+nav li a:hover{
+    background-color: rgba(233, 248, 14, 0.363);
+    transition: .5s;
+    border-radius: 8px;
+
+}
+
+.checkbtn{ 
+    font-size: 30px;
+    color: rgb(240, 109, 70);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+} 
+
+#check{
+    display: none;
+} 
+
+#logId{
+    display: none;
+    margin: 10px;
+    font-size: 2em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(218, 69, 15);
+
+}
+
+#logout{
+    display: none;
+}
+
+
+/* ---------main section------ */
+#planing{
+    font-size: 1.4em;
+    margin-left: 42%;
+}
+
+h2{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight: 200;
+    color: rgb(112, 73, 11);
+}
+p{
+    font-size: 1.4em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+main ol{
+    font-size: 1.3em;
+    margin: 5px 0px 15px 60px;
+}
+#sect2{
+    margin: 15px 150px 15px 150px;
+    text-align: justify;
+}
+
+/*---------main 2------*/
+.pagetitle{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    width:auto;
+    color: rgb(230, 127, 9);
+    font-size: 8em;
+    font-family:'Italianno', cursive;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgb(5, 5, 5);
+}
+.laterabx{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.searchB{
+    width: 98%;
+    height: 70px;
+    padding: 10px;
+    font-size: 1em;
+    color: rgb(211, 181, 11);
+    border: solid 3px rgb(250, 233, 176);
+    border-radius: 10px;
+    
+}
+.boxM{
+    margin-left: 268px;
+    border-left: solid 4px rgba(146, 145, 145, 0.548);
+    padding: 50px;
+    margin-top:5px;
+    margin-bottom: 10px;
+}
+.venue{
+    border: solid 3px yellow;
+    text-align: justify;
+    margin: 2em;
+    padding: 1em;
+}
+.venue h3{
+    color: orange;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.checked {
+    color: orange;
+} 
+
+/*---------------tips and cuppons------------*/
+main #bulletin{
+    width: 267px;
+    height: auto;
+    position:absolute;
+    top: 510px;
+    left:0;
+    bottom: 120px;
+    text-align: center;
+}
+
+#btnBan{
+    width: 100%;
+    display: inline-block;
+    margin-top: 30px;
+    background-color: rgba(235, 232, 232, 0.692);
+} 
+#btnTip1, #btnTip2{
+    width: 40%;
+    background-color: rgb(241, 241, 185);
+    border: solid 2px rgb(153, 152, 152);
+    font-size: 1em;
+    font-weight: 300;
+}
+
+#tips1, #tips2{
+    margin-top: 30px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#tips1 a:hover{
+    box-shadow: 5px 4px 9px rgb(107, 106, 105);
+    opacity: 0.9;
+}
+
+#tips2{
+    display: none;
+}
+
+.cuppon {
+    border: 5px dotted rgb(41, 40, 40); /* Dotted border */
+    width: 80%;
+    border-radius: 15px;
+    margin: 0 auto; /* Center the coupon */
+    margin-bottom: 30px;
+    max-width: 190px;
+  }
+
+  .container {
+    padding: 2px 16px;
+    background-color: #d4d1d1;
+  }
+
+  .promo {
+    background: rgb(173, 173, 173);
+    padding: 3px;
+  }
+
+  .expire {
+    color: red;
+  }
+  
+/*---------- picture gallery ---------*/
+#sect3{
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    
+}
+.slider-inner{
+    width: 97%;
+    height: auto;
+    margin: .2em;
+    margin-top: .6em;
+    overflow: hidden;
+}     
+.slider-outer{
+    width: auto;
+    height: 400px;
+    display: inline-flex;
+    font-size: 3em;
+    align-items: center;
+    margin: 4%;
+    margin-left: 6%;
+    margin-top: 1%;
+    padding: 5px;
+    border: 3px solid rgb(146, 145, 145);
+}   
+
+.slider-inner img{
+    display: none;
+    width: 530px;
+    height: 345px;
+}
+.slider-inner img.active{
+    display: inline-block;
+}
+#prev, #next, #prev1, #next1, #preBtn, #follow{
+    border: 3px solid rgb(146, 145, 145);
+    border-radius: 20%;
+    background-color: rgb(196, 194, 194);
+}
+
+/*-------------sign up and sign in forms-----------*/
+
+ .bg-modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+    width: 500px;
+    height: auto;
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+input{
+    width: 50%;
+    height: 2.2em;
+    margin-top: 15px;
+}
+
+#ckbox input{
+   width: 20%;
+   margin-left: 30%;
+}
+
+label{
+    margin-right: 30%;
+}
+
+.bg-modal2{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content2{
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+input{
+    width: 40%;
+    height: 2.2em;
+    margin-top: 15px;
+}
+
+fieldset{
+    border-radius: 4px;
+    font-size: 1em;
+    text-align: center;
+    display: inline;
+}
+
+.bg-modal2{
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 35em;
+    background-color: rgba(0, 0, 0, 0.253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content2{
+    width: 500px;
+    height: auto;
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    padding: 15px;
+}
+.chekbx input{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: -70px;
+}
+
+/*-----------venues and caters-----------*/
+
+.boxM ol{
+    list-style: none;
+    display: block;
+    margin-left: -10px;
+    font-size: 1em;
+}
+.venue img{
+    float: left;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.venue{
+    text-align: justify;
+   height: 270px;
+}
+
+.venue p{
+    margin-left: 100px;
+}
+
+.btv{
+    font-size: .9em;
+}
+
+.btv:hover{
+    box-shadow:  0 4px 8px 0 rgb(146, 145, 145);
+}
+
+/*------------event planners --------------*/
+#boxP{
+    display: inline-flex;
+    padding-left: 50px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgb(229, 238, 103);
+    width: 250px;
+    padding: 5px;
+    text-align: center;
+    margin: 20px;
+    font-size: .8em;
+}
+
+.ebtn, .ebtn2 {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color:rgb(218, 69, 15);
+    font-weight: 600;
+    background-color: rgba(233, 248, 14, 0.39);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+
+}
+
+  .ebtn:hover, a:hover {
+    opacity: 0.7;
+ }
+
+ .ebtn2:hover, a:hover {
+    opacity: 0.7;
+ }
+
+ .title{
+     font-size: 1.6em;
+     font-weight: 700;
+ }
+ 
+ /*---------photographers----------*/
+
+.boxB{
+    width: 70%;
+    height: 490px;
+    border: 1px solid #e7d107;
+    margin-left: 15%;
+    margin-bottom: 50px;
+    background-color: #e7d1075b;
+    perspective: 1000px;
+}
+
+.flipbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.9s;
+    transform-style: preserve-3d; 
+  }
+
+  .boxB:hover .flipbox {
+    transform: rotateY(180deg);
+  }
+
+  .flip-front, .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-front {
+    background-color: blanchedalmond;
+    color: black;
+    font-size: .9em;
+  }
+
+  .flip-back {
+    color: rgba(221, 155, 11, 0.87);
+    background-color: rgb(255, 240, 217);
+    transform: rotateY(180deg);
+    text-align: center;
+    padding-top: 15px;
+    font-size: 1.3em;
+  }
+
+  .flip-back input{
+      border-radius: 5px;
+      font-size: .6em;
+  }
+
+  .flip-back h2{
+      font-size: 1.2em;
+  }
+  textarea{
+      margin-top: 10px;
+      width: 40%;
+      height: 80px;
+      border-radius: 5px;
+      font-size: .6em;
+  }
+
+  .flip-front img{
+      width: 100%;
+      height: auto; 
+  }
+
+  .phContact{
+      width: 155px;
+      height: auto;
+      font-size: 1.3em;
+      font-weight: 500;
+      border: none;
+    outline: 0;
+    display: inline-block;
+    color:rgb(218, 69, 15);
+    font-weight: 600;
+    background-color: rgba(233, 248, 14, 0.39);
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .mtext{
+    text-align: center;
+    display: none;
+    
+}
+
+#ptx{
+    font-size: 3em;
+    font-family: 'Italianno', cursive;
+    color: rgb(124, 106, 4);
+}
+
+ /*--------------rentals and decore-------------*/
+
+ .slider-outer2, .slider-out4, .slider-oute3{
+     width: 100%;
+     height: auto;
+     margin: 0;
+     font-size: 3em;
+     text-align: center;
+ }
+
+ .slider-inner2, .slider-inner3, .slider-inner4{
+     width:63%;
+     height: 530px;
+     margin: 5px;
+     text-align: center;
+     display: inline-flex;
+ }
+
+ .rntD.active{
+     display: block;
+ }
+ .rntD1.show{
+    display: block;
+}
+.slider.act{
+    display: block;
+}
+
+ .rntD,.rntD1, .slider{
+     width: 270px;
+     height: auto; 
+     text-align: center;
+     font-size: .3em;
+     box-shadow: 0 4px 8px 0 rgb(229, 238, 103);
+    padding: 3px;
+    margin: 10px;
+    display: none;
+ }
+
+/* ----------footer------- */
+footer{
+    width: 100%;
+    height: 125px;
+    background-color:rgba(200, 211, 7, 0.472);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#box{
+    width: 100%;
+    height: 50%;
+    display: inline-flex;
+    vertical-align: middle;
+    margin-top: 20px;
+    font-size: 1em; 
+    font-weight: 600;
+} 
+
+#social{
+    margin-left: -70px;
+}
+#face, #insta, #twit{
+    font-size: 1em;
+    margin: 4px;
+}
+#face{
+    color: rgb(66, 66, 247);
+}
+   
+#insta{
+    color: rgb(226, 26, 66);
+
+}
+
+#twit{
+    color: rgb(7, 7, 173);
+
+}
+
+@media only screen and (max-width: 985px) {
+
+    nav #logo{
+        margin-right: 10px;
+        margin-left: 0px;
+        font-size: 2.5em;
+        float: left;
+        margin-top: 20px;
+        margin-left: 20px;
+        
+    }
+    #birds{
+        width: 85px;
+        height: 80px;
+        margin-left: 20px;
+    }
+    nav ul li a{
+        font-size: 1em;
+        margin: auto;
+       padding: 5px;
+    }
+
+    footer{
+        height: 150px;
+    }
+
+    #social, #phone{
+        width: 100% !important;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    #box{
+        display: inline-table;
+        font-size: 1em;
+    }
+    #face, #insta, #twit{
+        font-size: 1em;
+    }
+    #cright{
+        font-size: .9em;
+    }
+
+    #info{
+        display: inline-flex;
+        margin-left: 60%;
+    }
+    
+    .pagetitle{
+        top: 395px;
+        left: 18%;
+        font-size: 8em;
+    }
+
+    #bulletin{
+        display: none;
+    }
+
+    .boxM{
+        border: none;
+        margin-left: 0;
+        margin-top: 10px;
+
+    }
+     /*---------photo library---------*/
+     .slider-inner{
+        width: 89%;
+        height: auto;
+        display: inline-flex;
+    }
+   .slider-outer{
+       width: 87%;
+       height: auto;
+       font-size: 1.5em;
+   }
+
+   .slider-inner img{
+       width: 46%;
+       height: auto;
+       margin: 10px;
+   }
+    /*----------venues and caters---------*/
+    .venue{
+        height: 350px;
+        padding-top: 30px;
+        font-size: .9em;
+    }
+    .searchB{
+        width: 97%;
+        height: auto;
+        text-align: center;
+        font-size: 1em;
+        margin-bottom: 0px;
+    }
+
+    .venue span{
+        font-size: 1.3em;
+        margin-left: 10px;
+    }
+
+    /*------------planners, rentals&decore--------*/
+    .idCards{
+        display: inline-flex;
+        padding-left: 10px;
+    }
+    .card{
+        width: 180px;
+        height: auto;
+    }
+
+    .slider-outer2{
+        font-size: 2.1em;
+    }
+    
+    .slider-inner2{
+        font-size: 1.3em;
+    }
+
+     /*--------------rentals and decore-------------*/
+
+ .slider-outer2, .slider-out4, .slider-oute3{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    font-size: 3em;
+    text-align: center;
+}
+
+.slider-inner2, .slider-inner3, .slider-inner4{
+    width:68%;
+    height: auto;
+    margin: 2px;
+    text-align: center;
+    display: inline-flex;
+}
+
+
+.rntD,.rntD1, .slider{
+    width: 47%;
+    height: auto; 
+    font-size: .2em;
+   padding: 2px;
+   margin: 8px;
+   display: none;
+}
+
+
+}
+
+@media only screen and (max-width: 795px) {
+    
+#info{
+    margin-left: 18%;
+} 
+.checkbtn{
+    display: inline;
+    margin-top: 35px;
+}
+
+header { 
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    background-color: rgb(237, 241, 160);
+} 
+nav ul{
+    width: 100% ;
+    height: auto;
+    margin-top: 120px;
+    padding: 20px;
+    display: none;
+} 
+ nav ul li{
+    display: list-item;
+    text-align: center;
+} 
+
+nav ul li a{
+    padding: .5rem 1rem;
+} 
+
+
+ /* ------main----- */
+
+ #planing{
+    font-size: 1.4em;
+    margin-left: 39%;
+    
+}
+    h2{
+        font-size: 1.4em;
+    
+    }
+    p{
+        font-size: 1.2em;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+main ol{
+    font-size: 1em;
+    margin: 5px 0px 15px 60px;
+}
+
+#sect2{
+     margin: 15px 30px 15px 30px;
+}
+
+#bulletin{
+display: none;
+}
+.boxM{
+    border: none;
+    margin-left: 0;
+    padding-top: 15px;
+}
+.pagetitle{
+    top: 395px;
+    left: 19%;
+    font-size: 6em;
+}
+
+  /*---------photo library---------*/
+  .slider-inner{
+    width: 80%;
+    height: 290px;
+    display: block;
+    overflow: hidden;
+}
+.slider-outer{
+   width: 90%;
+   height: auto;
+   font-size: 3em;
+   display: inline-flex;
+   align-items:center;
+}
+
+.slider-inner img{
+   width: 100%;
+   height: auto;
+   margin-bottom: 150px;
+}
+/*-----------venues and caters----------*/
+ol li{
+    list-style:none; 
+    
+}
+.venue img{
+    width: 40%;
+    height: auto;
+    margin-bottom: 50px;
+}
+.venue{
+    height: auto;
+    margin-bottom: 20px;
+    font-size: .9em;
+    padding-top: 20px;
+}
+.venue h3{
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.venue span{
+    font-size: 1.3em;
+    margin-left: 10px;
+}
+.searchB{
+    width: 96%;
+    height: auto;
+    padding: 1%;
+}
+/*---------planners-----------*/
+#boxP{
+    display: block;
+    margin-top: 10px;
+}
+.card{
+    width: 60%;
+    height: auto;
+    font-size: 1em;
+    margin-left: 20%;
+    margin-bottom: 40px;
+}
+/*-------photography---------*/
+.boxB{
+    width: 90%;
+    height: 420px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    perspective: 1000px;
+}
+
+  .flip-front {
+    font-size: 1em;
+  }
+
+  .flip-back {
+    padding-top: 15px;
+    font-size: 1em;
+  }
+
+  textarea{
+      margin-top: 10px;
+      width: 50%;
+      height: 70px;
+  }
+
+  .flip-front img{
+      width: 100%;
+      height: auto; 
+  }
+
+  .phContact{
+      width: 155px;
+      height: auto;
+      font-size: 1.3em;
+      font-weight: 500;
+      background-color: rgb(207, 171, 53);
+      margin-bottom: 20px;
+  }
+
+  *-------------sign up and sign in forms-----------*/
+
+ .bg-modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+    width: 500px;
+    height: auto;
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+input{
+    width: 30%;
+    height: 1em;
+    margin-top: 5px;
+}
+
+#ckbox input{
+   width: 20%;
+   margin-left: 30%;
+}
+
+label{
+    margin-right: 30%;
+}
+
+.bg-modal2{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content2{
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+input{
+    width: 40%;
+    height: 1em;
+    margin-top: 5px;
+}
+
+fieldset{
+    font-size: .9em;
+}
+
+.bg-modal2{
+    width: 80%;
+    height: auto;
+    position: absolute;
+    top: 35em;
+    background-color: rgba(0, 0, 0, 0.253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content2{
+    width: 350px;
+    padding: 10px;
+    padding: 5px;
+}
+.chekbx input{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: -10px;
+}
+
+
+
+
+}
+
+@media only screen and (max-width: 585px) {
+   
+    #info{
+        margin-left: 15%;
+    }
+    .login{
+        font-size: 1em;
+    }
+
+    .checkbtn{ 
+        font-size: 25px;
+        line-height: 45px;
+        padding-top: 30px;
+    } 
+
+    header nav { 
+        background-color: rgb(237, 241, 160);
+    }
+    
+    nav #birds{
+        width: 78px !important;
+        height: 68px !important;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    nav #logo{
+        font-size: 2em;
+    }
+    
+    nav ul li{
+        font-size: .9em;
+    }
+
+    #box{
+        font-size: .9em;
+    }
+    #face, #insta, #twit{
+        font-size: 1em;
+    }
+    #cright{
+        font-size: .8em;
+    }
+
+     /* ------main----- */
+     #planing{
+        font-size: 1.2em;
+        margin-left: 32%;
+    
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    p{
+        font-size: 1em;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    main ol{
+        font-size: .9em;
+        margin: 5px 0px 15px 30px;
+    }
+    #sect2{
+        margin: 10px 25px 10px 25px;
+    }
+    .banner{
+        width: 100%;
+        height: 180px;
+    }
+    .pagetitle{
+        position:inherit;
+        font-size: 4em;
+        background-color: rgb(237, 241, 160);
+    }
+
+    .boxM{
+        margin: 10px;
+        padding: 20px;
+        
+    }
+    /*---------photo library---------*/
+    .slider-inner{
+        width: 100%;
+        height: 200px;
+        display: block;
+        overflow: hidden;
+    }
+   .slider-outer{
+       width: 87%;
+       height: auto;
+       font-size: 2em;
+       display: inline-flex;
+       align-items:center;
+   }
+
+   .slider-inner img{
+       width: 100%;
+       height: auto;
+       margin-bottom: 150px;
+   }
+   /*------------venues and caters----------*/
+   .venue img{
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-right: 0;
+}
+.venue{
+    float: none;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+.venue p{
+    margin-left: 0%;
+    text-align: justify;
+}
+.searchB{
+    width: 97%;
+}
+/*---------planners-----------*/
+#boxP{
+    display: block;
+    margin: 10px;
+}
+.card{
+    width: 95%;
+    height: auto;
+    font-size: 1em;
+    margin-left: -15px;
+    margin-right: 35px;
+    margin-bottom: 40px;
+}
+
+ /*--------------rentals and decore-------------*/
+
+ .slider-outer2, .slider-out4, .slider-oute3{
+    width: 100%;
+    height: auto;
+    font-size: 4em;
+    padding: 10px;
+    display: inline-flex;
+    align-items:baseline;
+    
+}
+
+.slider-inner2, .slider-inner3, .slider-inner4{
+    width: 70%;
+    height:500px;
+    display: block;
+    margin-right: -20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.rntD,.rntD1, .slider{
+    width: 70%;
+    height: auto; 
+    font-size: .2em;
+   padding: 2px;
+   margin: 10px;
+   margin-bottom: 180px;
+   display: none;
+}
+
+/*-------photography---------*/
+.boxB{
+    width: 90%;
+    height: 360px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    perspective: 1000px;
+}
+
+
+
+  .flip-front {
+    font-size: 1em;
+  }
+
+  .flip-back {
+    padding-top: 15px;
+    font-size: 1em;
+  }
+
+  textarea{
+      margin-top: 10px;
+      width: 50%;
+      height: 60px;
+  }
+
+  .flip-front img{
+      width: 100%;
+      height: auto; 
+  }
+
+  .phContact{
+      width: 155px;
+      height: auto;
+      font-size: 1.3em;
+      font-weight: 500;
+      background-color: rgb(207, 171, 53);
+      margin-bottom: 20px;
+  }
+
+  /*---------Rentals and decpre----------*/
+
+
+} 

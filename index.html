@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marry Place </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <style async>
+        @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+        </style>
+    <script src="https://kit.fontawesome.com/417d3d55bd.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="info">
+               <button class="login" id="sup">Signe Up</button>
+                <button class="login" id="lin">Log In</button>
+                <div style="display: inline-flex;"><p id="logId">???</p>
+                    <button type="button" id="logout">Signe Out</button>
+                </div>
+            </div> 
+            <!-- -----------menu bar---------- -->
+            <a href="#" id="logo"><img id="birds" src="images/logo.png" style="width: 130px; height: 85px">Marry Place</a>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul id="nav">
+                <li><a href="venues.html">Venues</a></li>
+                <li><a href="caters.html">Caters</a></li>
+                <li><a href="eventplanner.htm">Event Planners</a></li>
+                <li><a href="photo.htm">Photographers</a></li>
+                <li><a href="rental.html">Rentals & Decor</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="sect">
+             <img class="banner" src="images/mainBanner.jpg" width="100%" height="350px">
+             </div>
+      <div id="sect2">
+            <h2>Wedding Planning Made Simple</h2><br>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Tellus integer feugiat 
+                scelerisque varius morbi enim nunc. Feugiat nisl pretium fusce id velit ut tortor. <br>
+                Natoque penatibus et magnis dis. Sit amet dictum sit amet. Quam viverra orci sagittis 
+                eu volutpat odio facilisis mauris. Scelerisque purus semper eget duis at. Scelerisque mauris 
+                pellentesque pulvinar pellentesque habitant. Viverra justo nec ultrices dui sapien eget. 
+                Placerat duis ultricies lacus sed.  
+            </p><br><br><br>
+            <h2>What You Need Too Know Before Planning</h2><br>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi.
+            </p><br>
+            <ol>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+                <li>Est ante in nibh mauris cursus. </li>
+                <li>Id eu nisl nunc mi ipsum faucibus vitae.</li>
+                <li>Vitae justo eget magna fermentum iaculis eu. </li>
+                <li>Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed.</li>
+            </ol><br><br><br>
+            <h2>Our Wedding Wishes To You</h2><br>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Tellus integer feugiat 
+                scelerisque varius morbi enim nunc. Feugiat nisl pretium fusce id velit ut tortor.
+            </p><br><br>
+        </div>
+        
+        <div id="sect3">
+            <h2>Weddings Planned With Marry Place</h2><br><h2>Photo Gallery</h2><br>
+            <div class="slider-outer">
+              <i class="fas fa-angle-left"  alt="prev" id="prev" style="margin:7px;"></i>
+                <div class="slider-inner">
+                        <img src="slider/img_p1.jpg" class="active">
+                        <img src="slider/img_p2.jpg" class="active">
+                        <img src="slider/img_p3.jpg">
+                        <img src="slider/img_p4jpg.jpg" >
+                        <img src="slider/img_p5.jpg" >
+                        <img src="slider/img_p6.jpg" >   
+                </div>
+                <i class="fas fa-angle-right" alt="next" id="next" style="margin:7px;"></i>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div id="box">
+        <div id="phone" style="width: 60%;">
+            <p>Contact Us: <a href="tel:555-555-555" style="text-decoration: none;">555-555-555</a></i></p> 
+        </div>
+        <div id="social" style="width: 30%;">
+            <p>Find Us On: <a id="face" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> 
+                <a id="insta" href="https://www.instagram.com/" target="_blank"> <i class="fab fa-instagram"></i></a> 
+                 <a id="twit" href="https://twitter.com/" target="_blank"> <i class="fab fa-twitter"></i> </a></p>
+        </div>
+    </div>
+        <div id="cright" style="width: 100%;">
+            <p>&copy; Marry Place | Jquary project By: Michelle Tejeda</p>
+        </div>
+    </footer>
+
+    <div class="bg-modal" id="Su">
+        <div class="modal-content">
+           <img id="birds" src="images/logo.png" style="width:78px" height="68px"><br>
+           <p style="font-size: 2em; font-family: 'Italianno', cursive; color:rgb(211, 64, 6);">Marry Place</p>
+
+           <form  method = "post" action="">
+            <p>Sign Up</p>
+            <input type="text" placeholder="Enter User Name" name="name" required>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <label id="ckbox">
+            <input  type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <div class="clearfix">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+           </form>
+        </div>
+    </div>
+
+    <div class="bg-modal" id="Li">
+        <div class="modal-content">
+            <img id="birds" src="images/logo.png" style="width:78px" height="68px"><br>
+            <p style="font-size: 2em; font-family: 'Italianno', cursive; color:rgb(211, 64, 6);">Marry Place</p>
+            <form  method = "post" action="" id="myForm">
+                <p>Log In</p>
+                <input id="inText" type="text" placeholder="Enter User Name" name="name" required>
+               <input type="password" placeholder="Enter Password" name="psw" required style="width: 50%;" >
+               <div>
+                <button type="button" class="cancelbtn" style="width: 20%;">Cancel</button>
+                <button type="submit" class="signinbtn" style="width: 20%;">Sign In</button>
+               </div>
+               
+             </form>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
